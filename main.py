@@ -1,17 +1,27 @@
-from flask import Flask
-import os
-from base64 import b64encode
-
 #import PIL
-import datetime
+
 #from PIL import Image
 #import cStringIO
-#import pymysql
 from flask import Flask
 #from azure.storage.blob import BlockBlobService
 #from azure.storage.blob import ContentSettings
 from flask import render_template
 from flask import request
+#from mysql.connector import errorcode
+import pyodbc
+
+
+# Obtain connection string information from the portal
+#config = {
+server ='aishdb.database.windows.net'
+username ='aish'
+password ='Qwerty123'
+database ='AishDb'
+driver= '{ODBC Driver 13 for SQL Server}'
+cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
+#}
+
+# Construct connection string
 
 app = Flask(__name__)
 
@@ -19,7 +29,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     #print "Hello"
-    return render_template('upload.html')
+    return render_template('hellouser.html')
 
 
 @app.route('/uploadImage', methods=['get', 'post'])
