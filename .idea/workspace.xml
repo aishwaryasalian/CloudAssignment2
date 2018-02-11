@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6e3ac8-2094-4542-b2ab-87c08fe14d14" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/query.html" afterPath="$PROJECT_DIR$/templates/query.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/query_img.html" afterPath="$PROJECT_DIR$/templates/query_img.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/upload.html" afterPath="$PROJECT_DIR$/templates/upload.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="83">
@@ -27,8 +29,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <file leaf-file-name="upload.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/upload.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="display.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/display.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -37,8 +49,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ptvs_virtualenv_proxy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ptvs_virtualenv_proxy.py">
+      <file leaf-file-name="DisplayComments.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/DisplayComments.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -57,8 +79,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.2.7.config" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web.2.7.config">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -67,56 +89,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quizsubmit.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Quizsubmit.py">
+      <file leaf-file-name="query.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/query.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="24" selection-end-column="26" />
-              <folding>
-                <marker date="1518316755748" expanded="true" signature="1963:2061" ph="insert into photo1... " />
-                <marker date="1518316755748" expanded="true" signature="2490:2575" ph="insert into csvcontent1... " />
-                <marker date="1518316755748" expanded="true" signature="4022:4131" ph="insert into photo1... " />
-                <marker date="1518316755748" expanded="true" signature="4672:4767" ph="insert into csvcontent1... " />
-                <marker date="1518316755748" expanded="true" signature="5150:5304" ph="select disti... photo1" />
-                <marker date="1518316755748" expanded="true" signature="5651:5710" ph="SELECT path_... photo1" />
-                <marker date="1518316755748" expanded="true" signature="6077:6116" ph="select * fro... photo1" />
-                <marker date="1518316755748" expanded="true" signature="6136:6175" ph="select * fro... photo1" />
-                <marker date="1518316755748" expanded="true" signature="6768:6916" ph="select A.pat... Photo1" />
-                <marker date="1518316755748" expanded="true" signature="7189:7337" ph="select A.pat... Photo1" />
-                <marker date="1518316755748" expanded="true" signature="9192:9233" ph="select * fro... csvcontent1" />
-                <marker date="1518316755748" expanded="true" signature="10042:10083" ph="select * fro... csvcontent1" />
-                <marker date="1518316755748" expanded="true" signature="10741:10808" ph="SELECT imgna... photo1" />
-                <marker date="1518316755748" expanded="true" signature="11051:11111" ph="update ingco... " />
-                <marker date="1518316755748" expanded="true" signature="11214:11273" ph="SELECT path_... photo1" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.py">
+      <file leaf-file-name="query_img.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/query_img.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <marker date="1518316764380" expanded="true" signature="1963:2060" ph="insert into photo... " />
-                <marker date="1518316764380" expanded="true" signature="2489:2573" ph="insert into csvcontent... " />
-                <marker date="1518316764380" expanded="true" signature="4019:4127" ph="insert into photo... " />
-                <marker date="1518316764380" expanded="true" signature="4668:4762" ph="insert into csvcontent... " />
-                <marker date="1518316764380" expanded="true" signature="5144:5295" ph="select disti... photo" />
-                <marker date="1518316764380" expanded="true" signature="5642:5700" ph="SELECT path_... photo" />
-                <marker date="1518316764380" expanded="true" signature="6067:6105" ph="select * fro... photo" />
-                <marker date="1518316764380" expanded="true" signature="6125:6163" ph="select * fro... photo" />
-                <marker date="1518316764380" expanded="true" signature="6638:6704" ph="SELECT imgna... photo" />
-                <marker date="1518316764380" expanded="true" signature="6947:7006" ph="update ingco... " />
-                <marker date="1518316764380" expanded="true" signature="7109:7167" ph="SELECT path_... photo" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main.html">
+      <file leaf-file-name="show.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/show.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -137,6 +131,9 @@
         <option value="$PROJECT_DIR$/sample.py" />
         <option value="$PROJECT_DIR$/Assign.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/templates/upload.html" />
+        <option value="$PROJECT_DIR$/templates/query.html" />
+        <option value="$PROJECT_DIR$/templates/query_img.html" />
       </list>
     </option>
   </component>
@@ -174,6 +171,11 @@
             <path>
               <item name="Assignment8_Azure-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assignment8_Azure-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment8_Azure-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment8_Azure-master" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,14 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -366,6 +360,70 @@
             <marker date="1518320409132" expanded="true" signature="1172:1193" ph="select img f... Photo" />
             <marker date="1518320409132" expanded="true" signature="1760:1797" ph="SELECT * FRO... Photo" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/display.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DisplayComments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/query_img.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
