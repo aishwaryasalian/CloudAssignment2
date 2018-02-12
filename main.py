@@ -17,8 +17,8 @@ server ='aishdb.database.windows.net'
 username ='aish'
 password ='Qwerty123'
 database ='AishDb'
-driver= '{ODBC Driver 13 for SQL Server}'
-cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
+#driver= '{ODBC Driver 13 for SQL Server}'
+#cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
 #}
 
 # Construct connection string
@@ -31,6 +31,15 @@ def index():
     #print "Hello"
     return render_template('hellouser.html')
 
+@app.route('/loginPage', methods=['get', 'post'])
+def loginPage():
+    return render_template('login.html')
+
+
+@app.route('/uploadPage', methods=['get', 'post'])
+def uploadPage():
+    #print "Hello"
+    return render_template('upload.html')
 
 @app.route('/uploadImage', methods=['get', 'post'])
 def upload1():
@@ -53,6 +62,10 @@ def upload1():
     # myConnection.commit()
     return 'File uploaded successfully'
 
+
+@app.route('/viewImages' , methods=['get', 'post'])
+def viewImages():
+ return render_template('list.html')
 
 @app.route('/list', methods=['get', 'post'])
 def list():

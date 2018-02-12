@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h1>Hello $username</h1>
+</head>
+<body>
+
+<form id="user_form" action="/uploadPage" method="POST" enctype="multipart/form-data">
+
+
+    <br>
+
+    <input type="submit" name="Create" value="Upload Image"></input>
+
+</form>
+<br>
+<br>
+
+<form id="user_view" action="/viewImages" method="POST" enctype="multipart/form-data">
+    <input type="submit" name="View" value="View Image"></input>
+
+
+</form>
+</body>
+</html>
