@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6e3ac8-2094-4542-b2ab-87c08fe14d14" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hellouser.html" afterPath="$PROJECT_DIR$/templates/hellouser.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Quizsubmit.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -247,9 +247,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1924" height="1048" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -306,23 +305,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <marker date="1518316755748" expanded="true" signature="1963:2061" ph="insert into photo1... " />
-            <marker date="1518316755748" expanded="true" signature="2490:2575" ph="insert into csvcontent1... " />
-            <marker date="1518316755748" expanded="true" signature="4022:4131" ph="insert into photo1... " />
-            <marker date="1518316755748" expanded="true" signature="4672:4767" ph="insert into csvcontent1... " />
-            <marker date="1518316755748" expanded="true" signature="5150:5304" ph="select disti... photo1" />
-            <marker date="1518316755748" expanded="true" signature="5651:5710" ph="SELECT path_... photo1" />
-            <marker date="1518316755748" expanded="true" signature="6077:6116" ph="select * fro... photo1" />
-            <marker date="1518316755748" expanded="true" signature="6136:6175" ph="select * fro... photo1" />
-            <marker date="1518316755748" expanded="true" signature="6768:6916" ph="select A.pat... Photo1" />
-            <marker date="1518316755748" expanded="true" signature="7189:7337" ph="select A.pat... Photo1" />
-            <marker date="1518316755748" expanded="true" signature="9192:9233" ph="select * fro... csvcontent1" />
-            <marker date="1518316755748" expanded="true" signature="10042:10083" ph="select * fro... csvcontent1" />
-            <marker date="1518316755748" expanded="true" signature="10741:10808" ph="SELECT imgna... photo1" />
-            <marker date="1518316755748" expanded="true" signature="11051:11111" ph="update ingco... " />
-            <marker date="1518316755748" expanded="true" signature="11214:11273" ph="SELECT path_... photo1" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
