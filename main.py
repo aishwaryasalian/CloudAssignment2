@@ -23,8 +23,8 @@ database ='AishDb'
 #cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
 #}
 cnx = mysql.connector.connect(user="aishdblogin@aishdbserver", password="Qwerty123", host="aishdbserver.mysql.database.azure.com", port=3306, database="apsdb")
-print cnx
-print "connection successful"
+#print cnx
+#print "connection successful"
 # Construct connection string
 
 app = Flask(__name__)
