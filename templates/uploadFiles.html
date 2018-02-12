@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<h1 align="center">Picture Upload</h1>
+<h1 align="center">Picture Viewing for {{ fname }}</h1>
 <table align="center">
     <form action="/uploadFiles" method="POST" enctype="multipart/form-data">
         <tr>
@@ -17,10 +17,25 @@
             <td><input type="submit" name="upload" value="Upload"></td>
         </tr>
         <tr>
-            <th>Enter the title:</th>
+            <th>Enter the title :</th>
             <td><input type="text" name="title" placeholder="Enter title for Image" required></td>
         </tr>
     </form>
+    <tr></tr>
+    <tr>
+        <form action="/createAlbum" method="POST" enctype="multipart/form-data">
+            <th>Create album :</th>
+            <td><input type="text" name="album"></td>
+            <td></td>
+            <td><input type="submit" name="create" value="Create Album"></td>
+        </form>
+    </tr>
+    <tr>
+        <form action="/viewPhotos" method="POST" enctype="multipart/form-data">
+            <th>View your file here :</th>
+            <td><input type="submit" name="view" value="View photos"></td>
+        </form>
+    </tr>
 </table>
 </body>
 </html>

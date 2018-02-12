@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <h1>Hello $username</h1>
+    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-
-<form id="user_form" action="/uploadPage" method="POST" enctype="multipart/form-data">
-
-
-    <br>
-
-    <input type="submit" name="Create" value="Upload Image"></input>
-
+<h1 align="center">Login Page</h1>
+<form action="/login" method="POST">
+    <input type="text" name="Username" placeholder="Username" required>
+    <input type="submit" name="login" value="Login">
 </form>
-<br>
-<br>
+<br><br>
+<form action="/registerPage" method="POST">
+New User?
+    <input type="submit"      name="register"       value="Register Here"></form>
 
-<form id="user_view" action="/viewImages" method="POST" enctype="multipart/form-data">
-    <input type="submit" name="View" value="View Image"></input>
-
-
-</form>
 </body>
 </html>

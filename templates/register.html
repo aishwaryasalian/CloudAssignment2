@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<h1 class="text-muted" align="center">Register</h1>
+<form action="/register" method="post">
+    <table align="center">
+        <tr>
+            <td>User Name: </td>
+            <td><input type="text" name="Username" maxlength="15" placeholder="Username" title="Must be at most 15 characters" required></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>First Name: </td>
+            <td><input type="text" name="Firstname" maxlength="15" title="Must be at most 15 characters" placeholder="Firstname" required></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td><input type="text" name="Lastname" maxlength="15" title="Must be at most 15 characters" placeholder="Lastname" required></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="register" value="Register"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

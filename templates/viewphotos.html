@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<link type="text/css" href="{{ url_for('static', filename='css/star.css') }}" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo album</title>
+</head>
+<body>
+<h1>Photo Gallery</h1>
+<table align="center" width="75%">
+    <form method="POST">
+        <tr>
+            <th>Photo</th>
+            <th>Title</th>
+            <th>Date and Time of Creation</th>
+            <th>Average Rating</th>
+            <th>Rating</th>
+        </tr>
+        {% for photo in photos %}
+            <tr>
+                <td width="15%">
+                    <a href="{{ url_for('giveRatings', image_id = photo[0]) }}">
+                        <img src="data:image/jpg;base64, {{ photo[1] }}" height="256" width="256">
+                    </a>
+                </td>
+                <td width="15%">{{ photo[2] }} </td>
+                <td width="15%">{{ photo[3] }} </td>
+                <td width="15%">{{ photo[4] }}</td>
+                <td width="15%">Click on image to rate!</td>
+            </tr>
+        {% endfor %}
+    </form>
+</table>
+</body>
+</html>
