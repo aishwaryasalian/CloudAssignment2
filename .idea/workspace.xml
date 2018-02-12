@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6e3ac8-2094-4542-b2ab-87c08fe14d14" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Quizsubmit.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.py" afterPath="$PROJECT_DIR$/sample.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1617">
@@ -38,11 +38,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hellouser.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hellouser.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/hellouser.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
               <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="34" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+              <folding>
+                <marker date="1518404751633" expanded="true" signature="2068:2165" ph="insert into photo... " />
+                <marker date="1518404751633" expanded="true" signature="2630:2714" ph="insert into csvcontent... " />
+                <marker date="1518404751633" expanded="true" signature="4225:4333" ph="insert into photo... " />
+                <marker date="1518404751633" expanded="true" signature="4912:5006" ph="insert into csvcontent... " />
+                <marker date="1518404751633" expanded="true" signature="5413:5564" ph="select disti... photo" />
+                <marker date="1518404751633" expanded="true" signature="5938:5996" ph="SELECT path_... photo" />
+                <marker date="1518404751633" expanded="true" signature="6392:6430" ph="select * fro... photo" />
+                <marker date="1518404751633" expanded="true" signature="6452:6490" ph="select * fro... photo" />
+                <marker date="1518404751633" expanded="true" signature="7000:7066" ph="SELECT imgna... photo" />
+                <marker date="1518404751633" expanded="true" signature="7329:7388" ph="update ingco... " />
+                <marker date="1518404751633" expanded="true" signature="7499:7557" ph="SELECT path_... photo" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,26 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="query.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/query.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query_img.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/query_img.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -127,7 +139,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Quizsubmit.py" />
-        <option value="$PROJECT_DIR$/sample.py" />
         <option value="$PROJECT_DIR$/Assign.py" />
         <option value="$PROJECT_DIR$/templates/query.html" />
         <option value="$PROJECT_DIR$/templates/query_img.html" />
@@ -137,6 +148,7 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/templates/hellouser.html" />
+        <option value="$PROJECT_DIR$/sample.py" />
       </list>
     </option>
   </component>
@@ -247,8 +259,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1924" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -305,34 +318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="24" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <marker date="1518316764380" expanded="true" signature="1963:2060" ph="insert into photo... " />
-            <marker date="1518316764380" expanded="true" signature="2489:2573" ph="insert into csvcontent... " />
-            <marker date="1518316764380" expanded="true" signature="4019:4127" ph="insert into photo... " />
-            <marker date="1518316764380" expanded="true" signature="4668:4762" ph="insert into csvcontent... " />
-            <marker date="1518316764380" expanded="true" signature="5144:5295" ph="select disti... photo" />
-            <marker date="1518316764380" expanded="true" signature="5642:5700" ph="SELECT path_... photo" />
-            <marker date="1518316764380" expanded="true" signature="6067:6105" ph="select * fro... photo" />
-            <marker date="1518316764380" expanded="true" signature="6125:6163" ph="select * fro... photo" />
-            <marker date="1518316764380" expanded="true" signature="6638:6704" ph="SELECT imgna... photo" />
-            <marker date="1518316764380" expanded="true" signature="6947:7006" ph="update ingco... " />
-            <marker date="1518316764380" expanded="true" signature="7109:7167" ph="SELECT path_... photo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -441,6 +426,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hellouser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="34" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+          <folding>
+            <marker date="1518404751633" expanded="true" signature="2068:2165" ph="insert into photo... " />
+            <marker date="1518404751633" expanded="true" signature="2630:2714" ph="insert into csvcontent... " />
+            <marker date="1518404751633" expanded="true" signature="4225:4333" ph="insert into photo... " />
+            <marker date="1518404751633" expanded="true" signature="4912:5006" ph="insert into csvcontent... " />
+            <marker date="1518404751633" expanded="true" signature="5413:5564" ph="select disti... photo" />
+            <marker date="1518404751633" expanded="true" signature="5938:5996" ph="SELECT path_... photo" />
+            <marker date="1518404751633" expanded="true" signature="6392:6430" ph="select * fro... photo" />
+            <marker date="1518404751633" expanded="true" signature="6452:6490" ph="select * fro... photo" />
+            <marker date="1518404751633" expanded="true" signature="7000:7066" ph="SELECT imgna... photo" />
+            <marker date="1518404751633" expanded="true" signature="7329:7388" ph="update ingco... " />
+            <marker date="1518404751633" expanded="true" signature="7499:7557" ph="SELECT path_... photo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1617">
@@ -451,14 +472,6 @@
             <marker date="1518400929101" expanded="true" signature="1751:1772" ph="select img f... Photo" />
             <marker date="1518400929101" expanded="true" signature="2447:2484" ph="SELECT * FRO... Photo" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hellouser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
