@@ -8,7 +8,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 #from mysql.connector import errorcode
-import pyodbc
+#import pyodbc
 
 
 # Obtain connection string information from the portal
