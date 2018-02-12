@@ -1,0 +1,5 @@
+cat.jpg, 2016,  Susan took this picture
+nowak.jpg,  2016, Joan is Nowak's Mom
+wcroud.jpg, 1968, Wood Stock Rules
+traffic.jpg, 1968, Woodstock traffic jam
+  

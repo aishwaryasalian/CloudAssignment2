@@ -3,8 +3,8 @@
 #from PIL import Image
 #import cStringIO
 from flask import Flask
-#from azure.storage.blob import BlockBlobService
-#from azure.storage.blob import ContentSettings
+from azure.storage.blob import BlockBlobService
+from azure.storage.blob import ContentSettings
 from flask import render_template
 from flask import request
 import mysql.connector
@@ -15,7 +15,7 @@ import base64
 import datetime
 import time
 #import uuid
-
+from azure.storage.blob import PublicAccess
 #import pymysql
 from flask import Flask, render_template, session, request, flash, redirect, url_for
 
@@ -34,7 +34,16 @@ cursor1 = db.cursor()
 cursor2 = db.cursor()
 #print (db)
 #print ("connection successful")
+block_blob_service = BlockBlobService(account_name='aishlogs',
+                                      account_key='VnKALk8wpTyN+cgBLwdH6b6mZ/XDYbvCeg5UlBfrdSV37JsaoE+tgo+YQcI1myxdkqB2+wL1h76/BWBVxVsjpA==')
+print(block_blob_service)
+#block_blob_service.set_container_acl('aishimgcontainer', public_access=PublicAccess.Container)
+print ('Blob connected')
+newfile = "C:/Users/aishw/Downloads/Cloud computing/Assignment2/Assignment8_Azure-master/images/cat.jpg"
+print (newfile)
 
+block_blob_service.create_blob_from_path('aishimgcontainer', 'cat.jpg', newfile,content_settings=ContentSettings(content_type='image/jpg'))
+#imgUrl = 'https://mycloudassign.blob.core.windows.net/saipriya/'
 app = Flask(__name__)
 app.secret_key = "super secret key"
 
@@ -147,58 +156,80 @@ def uploadFiles():
         file_title = request.form['title']
         filename = file_name.filename
         #print(filename)
-        sql = "select * from Image where user_name = '" + uname + "' and Image_name ='" + filename + "'"
+        #sql = "select * from Image where user_name = '" + uname + "' and Image_name ='" + filename + "'"
         #print(sql)
-        cursor.execute(sql)
+        #cursor.execute(sql)
         #print(cursor.rowcount)
-        if cursor.rowcount  <=0 and allowed_file(filename):
-            file_contents = file_name.read()
-            #print(file_contents)
-            if len(file_contents) > 1024 * 1024:
-                return '<h1>File size greater than 1MB</h1><br><form action="../"><input type="Submit" value="Lets go back"></form>'
-            sql = "INSERT INTO Image (user_name, Title, Image_name, Data, Date_created) VALUES('" + uname + "','" + file_title + "','" + filename + "','" + base64.standard_b64encode(file_contents) + "','" + timestamp + "')"
-            #print(sql)
-            cursor.execute(sql)
+        newfile = "C:/Users/aishw/Downloads/Cloud computing/Assignment2/Assignment8_Azure-master/images/" + filename
+        print(newfile)
+        block_blob_service.create_blob_from_path('aishimgcontainer', filename, newfile,
+                                                 content_settings=ContentSettings(content_type='image/jpg'))
 
-            db.commit()
-
-
-        elif cursor.rowcount > 0:
-            return '<h1>File ' + filename + '  exists on cloud.  upload other file.</h1><br><form"><input type="button" value="Lets go back" onclick="history.go(-1)"></form>'
-        else:
-            return '<h1>Incorrect file extension</h1><br><form"><input type="button" value="Lets go back" onclick="history.go(-1)"></form>'
+        # print(file_contents)
+        url = "https://aishlogs.blob.core.windows.net/aishimgcontainer/" + filename
+        # if len(file_contents) > 1024 * 1024:
+        #    return '<h1>File size greater than 1MB</h1><br><form action="../"><input type="Submit" value="Lets go back"></form>'
+        #sql = "INSERT into Image(user_name, Title, Image_name, Data, Date_created) VALUES(%s,%s,%s,%s,%s)", uname, file_title, filename, url, timestamp
+        sql = "INSERT INTO Image VALUES('" + str(uname) + "','" + str(file_title) + "','" + str(filename) + "','" + str(url) + "','" + str(timestamp) + "')"
+        print(sql)
+        cursor.execute(sql)
+        db.commit()
         return '<h1>Files have been uploaded<h1><br><form"><input type="button" value="Lets go back" onclick="history.go(-1)"></form>'
-    return render_template('login.html')
+        # if allowed_file(filename):
+        #     file_contents = file_name.read()
+        #
+        #
+        # elif cursor.rowcount > 0:
+        #     return '<h1>File ' + filename + '  exists on cloud.  upload other file.</h1><br><form"><input type="button" value="Lets go back" onclick="history.go(-1)"></form>'
+        # else:
+        #     return '<h1>Incorrect file extension</h1><br><form"><input type="button" value="Lets go back" onclick="history.go(-1)"></form>'
+        #return '<h1>Files have been uploaded<h1><br><form"><input type="button" value="Lets go back" onclick="history.go(-1)"></form>'
+    #return render_template('login.html')
 
 
 @app.route('/viewPhotos', methods=['POST', 'GET'])
 def viewPhotos():
-    if request.method == 'POST':
-        photos_array = []
-        sql2 = "select Image_ID, Data, Title, Date_Created from Image where Image_ID not in (select Image_ID from rating)"
-        #print(sql2)
-        cursor2.execute(sql2)
-        #print(cursor2.rowcount)
-        if cursor2.rowcount > 0:
-            for ind2 in cursor2:
-                photos_array.append([ind2[0], ind2[1], ind2[2], ind2[3], 0])
+    # list=[]
+    # generator = block_blob_service.list_blobs('aishimgcontainer')
+    # for blob in generator:
+    #      print(blob.name)
+    #      list.append("https://aishlogs.blob.core.windows.net/aishimgcontainer/" + blob.name)
+    # print(list[1])
+    # return render_template('display.html', img=list)
 
-        sql = "select Image_ID,Data,Title,Date_Created from Image order by Image_ID desc"
-        #print(sql)
-        cursor.execute(sql)
-        res = cursor.fetchall()
-        #print(res)
-        # photos_array = []
-        for ind in cursor:
-            sql1 = "select image_id, avg(rating) from rating group by %d" % (1)
-            cursor1.execute(sql1)
-            for ind1 in cursor1:
-                if ind1[1] != 0 and ind[0] == ind1[0]:
-                    photos_array.append([ind[0], ind[1], ind[2], ind[3], ind1[1]])
-                elif ind1[1] == 0:
-                    photos_array.append([ind[0], ind[1], ind[2], ind[3], 0])
-        # print photos_array
-        return render_template('viewphotos.html', photos=photos_array)
+    sqlQuery = "select  Title, Image_name, Data, Date_created from Image"
+    cursor.execute(sqlQuery)
+    list = cursor.fetchall();
+    print(list)
+    return render_template('display.html', list=list)
+    # if request.method == 'POST':
+    #     photos_array = []
+    #     #sql2 = "select Image_ID, Data, Title, Date_Created from Image where Image_ID not in (select Image_ID from rating)"
+    #     #print(sql2)
+    #     #cursor2.execute(sql2)
+    #     #list = cursor2.fetchall()
+    #     #print(list)
+    #     #print(cursor2.rowcount)
+    #     if cursor2.rowcount > 0:
+    #         for ind2 in cursor2:
+    #             photos_array.append([ind2[0], ind2[1], ind2[2], ind2[3], 0])
+    #
+    #     sql = "select Image_ID,Data,Title,Date_Created from Image order by Image_ID desc"
+    #     #print(sql)
+    #     cursor.execute(sql)
+    #     res = cursor.fetchall()
+    #     #print(res)
+    #     # photos_array = []
+    #     for ind in cursor:
+    #         sql1 = "select image_id, avg(rating) from rating group by %d" % (1)
+    #         cursor1.execute(sql1)
+    #         for ind1 in cursor1:
+    #             if ind1[1] != 0 and ind[0] == ind1[0]:
+    #                 photos_array.append([ind[0], ind[1], ind[2], ind[3], ind1[1]])
+    #             elif ind1[1] == 0:
+    #                 photos_array.append([ind[0], ind[1], ind[2], ind[3], 0])
+    #     # print photos_array
+    #     return render_template('viewphotos.html', photos=photos_array)
 
 
 @app.route('/giveRatings/<image_id>', methods=['POST', 'GET'])

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Images</title>
+</head>
+<body>
+<h1>Images</h1>
+
+{%for item in img%}
+    {{ item }}
+    <img src="{{ item }}"style="width:508px;height:328px;"><br>
+    {#<img src="{{ item.get('path_url') }}" style="width:508px;height:328px;"></img><br>#}
+{% endfor %}
+
+
+<table align="center" width="75%">
+    <form method="POST">
+        <tr>
+            <th>Title</th>
+            <th>name</th>
+            <th>photo</th>
+            <th>time stamp</th>
+
+        </tr>
+
+        {% for photo in list %}
+        <tr>
+        <td>{{ photo[0] }}</td>
+        <td>{{ photo[1] }}</td>
+        <td><img src="{{ photo[2] }}"style="width:508px;height:328px;"></td>
+        <td>{{  photo[3]}}</td>
+
+            </tr>
+        {% endfor %}
+    </form>
+</table>
+
+</body>
+</html>

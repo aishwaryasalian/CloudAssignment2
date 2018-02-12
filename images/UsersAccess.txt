@@ -1,0 +1,6 @@
+Shraddha,	4,  60
+Shangeetha,	3,  60
+Dave,		1,  100
+Andrew,		6,  75
+Cat,		2,  200
+Grace,		3,  200
