@@ -54,11 +54,13 @@ uid=100
 userid=100
 uname="aish"
 
+#pip freeze > requirements.txt on local to automatically insert packages into requirements.txt
 
 @app.route('/', methods=['POST', 'GET'])
 @app.route('/login.html')
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+    #pip freeze > requirements.txt on local to automatically insert packages into requirements.txt
     if request.method == 'POST':
         uname = request.form['Username']
         sql = "select first_name, last_name from user where user_name = '" + uname + "'"
@@ -83,7 +85,7 @@ def registerPage():
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
-        # check if user is already in session
+        # pip freeze > requirements.txt on local to automatically insert packages into requirements.txt
 
 
 
