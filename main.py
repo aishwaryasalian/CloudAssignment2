@@ -3,8 +3,8 @@
 #from PIL import Image
 #import cStringIO
 from flask import Flask
-from azure.storage.blob import BlockBlobService
-from azure.storage.blob import ContentSettings
+#from azure.storage.blob import BlockBlobService
+#from azure.storage.blob import ContentSettings
 from flask import render_template
 from flask import request
 import mysql.connector
@@ -34,16 +34,16 @@ cursor1 = db.cursor()
 cursor2 = db.cursor()
 #print (db)
 #print ("connection successful")
-block_blob_service = BlockBlobService(account_name='aishlogs',
-                                      account_key='VnKALk8wpTyN+cgBLwdH6b6mZ/XDYbvCeg5UlBfrdSV37JsaoE+tgo+YQcI1myxdkqB2+wL1h76/BWBVxVsjpA==')
-print(block_blob_service)
-#block_blob_service.set_container_acl('aishimgcontainer', public_access=PublicAccess.Container)
-print ('Blob connected')
-newfile = "C:/Users/aishw/Downloads/Cloud computing/Assignment2/Assignment8_Azure-master/images/cat.jpg"
-print (newfile)
-
-block_blob_service.create_blob_from_path('aishimgcontainer', 'cat.jpg', newfile,content_settings=ContentSettings(content_type='image/jpg'))
-#imgUrl = 'https://mycloudassign.blob.core.windows.net/saipriya/'
+# block_blob_service = BlockBlobService(account_name='aishlogs',
+#                                       account_key='VnKALk8wpTyN+cgBLwdH6b6mZ/XDYbvCeg5UlBfrdSV37JsaoE+tgo+YQcI1myxdkqB2+wL1h76/BWBVxVsjpA==')
+# print(block_blob_service)
+# #block_blob_service.set_container_acl('aishimgcontainer', public_access=PublicAccess.Container)
+# print ('Blob connected')
+# newfile = "C:/Users/aishw/Downloads/Cloud computing/Assignment2/Assignment8_Azure-master/images/cat.jpg"
+# print (newfile)
+#
+# block_blob_service.create_blob_from_path('aishimgcontainer', 'cat.jpg', newfile,content_settings=ContentSettings(content_type='image/jpg'))
+# #imgUrl = 'https://mycloudassign.blob.core.windows.net/saipriya/'
 app = Flask(__name__)
 app.secret_key = "super secret key"
 
@@ -160,10 +160,10 @@ def uploadFiles():
         #print(sql)
         #cursor.execute(sql)
         #print(cursor.rowcount)
-        newfile = "C:/Users/aishw/Downloads/Cloud computing/Assignment2/Assignment8_Azure-master/images/" + filename
-        print(newfile)
-        block_blob_service.create_blob_from_path('aishimgcontainer', filename, newfile,
-                                                 content_settings=ContentSettings(content_type='image/jpg'))
+        # newfile = "C:/Users/aishw/Downloads/Cloud computing/Assignment2/Assignment8_Azure-master/images/" + filename
+        # print(newfile)
+        # block_blob_service.create_blob_from_path('aishimgcontainer', filename, newfile,
+        #                                          content_settings=ContentSettings(content_type='image/jpg'))
 
         # print(file_contents)
         url = "https://aishlogs.blob.core.windows.net/aishimgcontainer/" + filename
