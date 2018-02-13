@@ -1,4 +1,4 @@
 Flask==0.12.1
 mysql-connector-python==8.0.6
 python-dateutil
-azure-storage-common<1.2.0,>=1.1.0
+
