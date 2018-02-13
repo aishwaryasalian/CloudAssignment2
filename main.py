@@ -173,8 +173,9 @@ def uploadFiles():
         #sql = "INSERT into Image(user_name, Title, Image_name, Data, Date_created) VALUES(%s,%s,%s,%s,%s)", uname, file_title, filename, url, timestamp
         sql = "INSERT INTO Image VALUES('" + str(uname) + "','" + str(file_title) + "','" + str(filename) + "','" + str(url) + "','" + str(timestamp) + "')"
         #print(sql)
-        cursor.execute(sql)
-        db.commit()
+        # sql1="INSERT INTO picture (photo_name, year , description) VALUES('"+ str(filename)+"','"+ str(timestamp)+ "','" + str(description) + "')"
+        # cursor.execute(sql)
+        # db.commit()
         return '<h1>Files have been uploaded<h1><br><form"><input type="button" value="Lets go back" onclick="history.go(-1)"></form>'
         # if allowed_file(filename):
         #     file_contents = file_name.read()
