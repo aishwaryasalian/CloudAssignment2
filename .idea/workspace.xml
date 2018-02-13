@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6e3ac8-2094-4542-b2ab-87c08fe14d14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,25 +45,26 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1832">
-              <caret line="162" column="28" lean-forward="true" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
+            <state relative-caret-position="184">
+              <caret line="51" column="58" lean-forward="false" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
               <folding>
                 <element signature="e#54#77#0" expanded="true" />
-                <marker date="1518484789163" expanded="true" signature="3446:3504" ph="select user_... user" />
-                <marker date="1518484789163" expanded="true" signature="3773:3846" ph="insert into user... " />
-                <marker date="1518484789163" expanded="true" signature="4574:4664" ph="select * fro... album" />
-                <marker date="1518484789163" expanded="true" signature="4767:4895" ph="INSERT INTO album... " />
-                <marker date="1518484789163" expanded="true" signature="5838:5926" ph="select * fro... Image" />
-                <marker date="1518484789163" expanded="true" signature="6663:6753" ph="INSERT into Image... " />
-                <marker date="1518484789163" expanded="true" signature="6815:6955" ph="INSERT INTO Image... " />
-                <marker date="1518484789163" expanded="true" signature="8210:8266" ph="select Title... Image" />
-                <marker date="1518484789163" expanded="true" signature="8479:8584" ph="select Image... Image" />
-                <marker date="1518484789163" expanded="true" signature="8556:8583" ph="select Image... rating" />
-                <marker date="1518484789163" expanded="true" signature="8909:8982" ph="select Image... Image" />
-                <marker date="1518484789163" expanded="true" signature="9173:9223" ph="select image... rating" />
-                <marker date="1518484789163" expanded="true" signature="9891:9977" ph="select * fro... rating" />
-                <marker date="1518484789163" expanded="true" signature="10080:10214" ph="insert into rating... " />
-                <marker date="1518484789163" expanded="true" signature="10522:10653" ph="update ratin... " />
+                <marker date="1518485025972" expanded="true" signature="2501:2573" ph="select first... user" />
+                <marker date="1518485025972" expanded="true" signature="3452:3510" ph="select user_... user" />
+                <marker date="1518485025972" expanded="true" signature="3779:3852" ph="insert into user... " />
+                <marker date="1518485025972" expanded="true" signature="4580:4670" ph="select * fro... album" />
+                <marker date="1518485025972" expanded="true" signature="4773:4901" ph="INSERT INTO album... " />
+                <marker date="1518485025972" expanded="true" signature="5844:5932" ph="select * fro... Image" />
+                <marker date="1518485025972" expanded="true" signature="6669:6759" ph="INSERT into Image... " />
+                <marker date="1518485025972" expanded="true" signature="6821:6961" ph="INSERT INTO Image... " />
+                <marker date="1518485025972" expanded="true" signature="8216:8272" ph="select Title... Image" />
+                <marker date="1518485025972" expanded="true" signature="8485:8590" ph="select Image... Image" />
+                <marker date="1518485025972" expanded="true" signature="8562:8589" ph="select Image... rating" />
+                <marker date="1518485025972" expanded="true" signature="8915:8988" ph="select Image... Image" />
+                <marker date="1518485025972" expanded="true" signature="9179:9229" ph="select image... rating" />
+                <marker date="1518485025972" expanded="true" signature="9897:9983" ph="select * fro... rating" />
+                <marker date="1518485025972" expanded="true" signature="10086:10220" ph="insert into rating... " />
+                <marker date="1518485025972" expanded="true" signature="10528:10659" ph="update ratin... " />
               </folding>
             </state>
           </provider>
@@ -192,8 +190,8 @@
         <option value="$PROJECT_DIR$/templates/uploadFiles.html" />
         <option value="$PROJECT_DIR$/templates/viewphotos.html" />
         <option value="$PROJECT_DIR$/templates/giveRatings.html" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -331,11 +329,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1924" height="1048" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -586,25 +583,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1832">
-          <caret line="162" column="28" lean-forward="true" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
+        <state relative-caret-position="184">
+          <caret line="51" column="58" lean-forward="false" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
           <folding>
             <element signature="e#54#77#0" expanded="true" />
-            <marker date="1518484789163" expanded="true" signature="3446:3504" ph="select user_... user" />
-            <marker date="1518484789163" expanded="true" signature="3773:3846" ph="insert into user... " />
-            <marker date="1518484789163" expanded="true" signature="4574:4664" ph="select * fro... album" />
-            <marker date="1518484789163" expanded="true" signature="4767:4895" ph="INSERT INTO album... " />
-            <marker date="1518484789163" expanded="true" signature="5838:5926" ph="select * fro... Image" />
-            <marker date="1518484789163" expanded="true" signature="6663:6753" ph="INSERT into Image... " />
-            <marker date="1518484789163" expanded="true" signature="6815:6955" ph="INSERT INTO Image... " />
-            <marker date="1518484789163" expanded="true" signature="8210:8266" ph="select Title... Image" />
-            <marker date="1518484789163" expanded="true" signature="8479:8584" ph="select Image... Image" />
-            <marker date="1518484789163" expanded="true" signature="8556:8583" ph="select Image... rating" />
-            <marker date="1518484789163" expanded="true" signature="8909:8982" ph="select Image... Image" />
-            <marker date="1518484789163" expanded="true" signature="9173:9223" ph="select image... rating" />
-            <marker date="1518484789163" expanded="true" signature="9891:9977" ph="select * fro... rating" />
-            <marker date="1518484789163" expanded="true" signature="10080:10214" ph="insert into rating... " />
-            <marker date="1518484789163" expanded="true" signature="10522:10653" ph="update ratin... " />
+            <marker date="1518485025972" expanded="true" signature="2501:2573" ph="select first... user" />
+            <marker date="1518485025972" expanded="true" signature="3452:3510" ph="select user_... user" />
+            <marker date="1518485025972" expanded="true" signature="3779:3852" ph="insert into user... " />
+            <marker date="1518485025972" expanded="true" signature="4580:4670" ph="select * fro... album" />
+            <marker date="1518485025972" expanded="true" signature="4773:4901" ph="INSERT INTO album... " />
+            <marker date="1518485025972" expanded="true" signature="5844:5932" ph="select * fro... Image" />
+            <marker date="1518485025972" expanded="true" signature="6669:6759" ph="INSERT into Image... " />
+            <marker date="1518485025972" expanded="true" signature="6821:6961" ph="INSERT INTO Image... " />
+            <marker date="1518485025972" expanded="true" signature="8216:8272" ph="select Title... Image" />
+            <marker date="1518485025972" expanded="true" signature="8485:8590" ph="select Image... Image" />
+            <marker date="1518485025972" expanded="true" signature="8562:8589" ph="select Image... rating" />
+            <marker date="1518485025972" expanded="true" signature="8915:8988" ph="select Image... Image" />
+            <marker date="1518485025972" expanded="true" signature="9179:9229" ph="select image... rating" />
+            <marker date="1518485025972" expanded="true" signature="9897:9983" ph="select * fro... rating" />
+            <marker date="1518485025972" expanded="true" signature="10086:10220" ph="insert into rating... " />
+            <marker date="1518485025972" expanded="true" signature="10528:10659" ph="update ratin... " />
           </folding>
         </state>
       </provider>
