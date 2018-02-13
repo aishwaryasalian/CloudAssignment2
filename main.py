@@ -60,7 +60,6 @@ uname="aish"
 @app.route('/login.html')
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    #pip freeze > requirements.txt on local to automatically insert packages into requirements.txt
     if request.method == 'POST':
         uname = request.form['Username']
         sql = "select first_name, last_name from user where user_name = '" + uname + "'"
@@ -68,7 +67,7 @@ def login():
         cursor.execute(sql)
         #print(cursor.rowcount)
         results = cursor.fetchall()
-        if cursor.rowcount == 1:
+        if cursor.rowcount > 0:
 
             #print(results)
             for row in results:
@@ -173,7 +172,7 @@ def uploadFiles():
         #    return '<h1>File size greater than 1MB</h1><br><form action="../"><input type="Submit" value="Lets go back"></form>'
         #sql = "INSERT into Image(user_name, Title, Image_name, Data, Date_created) VALUES(%s,%s,%s,%s,%s)", uname, file_title, filename, url, timestamp
         sql = "INSERT INTO Image VALUES('" + str(uname) + "','" + str(file_title) + "','" + str(filename) + "','" + str(url) + "','" + str(timestamp) + "')"
-        print(sql)
+        #print(sql)
         cursor.execute(sql)
         db.commit()
         return '<h1>Files have been uploaded<h1><br><form"><input type="button" value="Lets go back" onclick="history.go(-1)"></form>'
@@ -202,7 +201,7 @@ def viewPhotos():
     sqlQuery = "select  Title, Image_name, Data, Date_created from Image"
     cursor.execute(sqlQuery)
     list = cursor.fetchall();
-    print(list)
+    #print(list)
     return render_template('display.html', list=list)
     # if request.method == 'POST':
     #     photos_array = []
